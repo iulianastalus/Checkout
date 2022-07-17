@@ -1,0 +1,12 @@
+D:\Checkout\Checkout.Migrations\obj\Debug\net6.0\Checkout.Migrations.csproj.AssemblyReference.cache
+D:\Checkout\Checkout.Migrations\obj\Debug\net6.0\Checkout.Migrations.GeneratedMSBuildEditorConfig.editorconfig
+D:\Checkout\Checkout.Migrations\obj\Debug\net6.0\Checkout.Migrations.AssemblyInfoInputs.cache
+D:\Checkout\Checkout.Migrations\obj\Debug\net6.0\Checkout.Migrations.AssemblyInfo.cs
+D:\Checkout\Checkout.Migrations\obj\Debug\net6.0\Checkout.Migrations.csproj.CoreCompileInputs.cache
+D:\Checkout\Checkout.Migrations\bin\Debug\net6.0\Checkout.Migrations.deps.json
+D:\Checkout\Checkout.Migrations\bin\Debug\net6.0\Checkout.Migrations.dll
+D:\Checkout\Checkout.Migrations\bin\Debug\net6.0\Checkout.Migrations.pdb
+D:\Checkout\Checkout.Migrations\obj\Debug\net6.0\Checkout.Migrations.dll
+D:\Checkout\Checkout.Migrations\obj\Debug\net6.0\refint\Checkout.Migrations.dll
+D:\Checkout\Checkout.Migrations\obj\Debug\net6.0\Checkout.Migrations.pdb
+D:\Checkout\Checkout.Migrations\obj\Debug\net6.0\ref\Checkout.Migrations.dll

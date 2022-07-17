@@ -1,0 +1,12 @@
+D:\Checkout\Checkout.Domain\bin\Debug\net6.0\Checkout.Domain.deps.json
+D:\Checkout\Checkout.Domain\bin\Debug\net6.0\Checkout.Domain.dll
+D:\Checkout\Checkout.Domain\bin\Debug\net6.0\Checkout.Domain.pdb
+D:\Checkout\Checkout.Domain\obj\Debug\net6.0\Checkout.Domain.csproj.AssemblyReference.cache
+D:\Checkout\Checkout.Domain\obj\Debug\net6.0\Checkout.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Checkout\Checkout.Domain\obj\Debug\net6.0\Checkout.Domain.AssemblyInfoInputs.cache
+D:\Checkout\Checkout.Domain\obj\Debug\net6.0\Checkout.Domain.AssemblyInfo.cs
+D:\Checkout\Checkout.Domain\obj\Debug\net6.0\Checkout.Domain.csproj.CoreCompileInputs.cache
+D:\Checkout\Checkout.Domain\obj\Debug\net6.0\Checkout.Domain.dll
+D:\Checkout\Checkout.Domain\obj\Debug\net6.0\refint\Checkout.Domain.dll
+D:\Checkout\Checkout.Domain\obj\Debug\net6.0\Checkout.Domain.pdb
+D:\Checkout\Checkout.Domain\obj\Debug\net6.0\ref\Checkout.Domain.dll

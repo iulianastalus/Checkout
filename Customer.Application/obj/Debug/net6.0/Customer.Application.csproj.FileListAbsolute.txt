@@ -1,0 +1,12 @@
+D:\Checkout\Customer.Application\bin\Debug\net6.0\Customer.Application.deps.json
+D:\Checkout\Customer.Application\bin\Debug\net6.0\Customer.Application.dll
+D:\Checkout\Customer.Application\bin\Debug\net6.0\Customer.Application.pdb
+D:\Checkout\Customer.Application\obj\Debug\net6.0\Customer.Application.csproj.AssemblyReference.cache
+D:\Checkout\Customer.Application\obj\Debug\net6.0\Customer.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Checkout\Customer.Application\obj\Debug\net6.0\Customer.Application.AssemblyInfoInputs.cache
+D:\Checkout\Customer.Application\obj\Debug\net6.0\Customer.Application.AssemblyInfo.cs
+D:\Checkout\Customer.Application\obj\Debug\net6.0\Customer.Application.csproj.CoreCompileInputs.cache
+D:\Checkout\Customer.Application\obj\Debug\net6.0\Customer.Application.dll
+D:\Checkout\Customer.Application\obj\Debug\net6.0\refint\Customer.Application.dll
+D:\Checkout\Customer.Application\obj\Debug\net6.0\Customer.Application.pdb
+D:\Checkout\Customer.Application\obj\Debug\net6.0\ref\Customer.Application.dll
