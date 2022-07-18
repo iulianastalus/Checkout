@@ -35,6 +35,7 @@ namespace Checkout.Controllers
         [HttpPut("Baskets/{id}/article-line")]
         public async Task<IActionResult> UpdateBasket([FromBody] UpdateBasketCommand updateBasketCommand,Guid id, CancellationToken cancellationToken = default)
         {
+            updateBasketCommand.Guid = id;
             var result = await _mediator.Send(updateBasketCommand, cancellationToken);
             return Ok(result);
         }

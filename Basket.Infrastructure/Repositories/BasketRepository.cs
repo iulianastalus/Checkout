@@ -29,11 +29,14 @@ namespace Basket.Infrastructure.Repositories
 
         public async Task<ShoppingCart> UpdateBasket(ShoppingCart basket)
         {
-            basket.Id = Guid.NewGuid();
+            if(basket.Id == Guid.Empty)
+                basket.Id = Guid.NewGuid();
+
             var strBasket = JsonConvert.SerializeObject(basket);            
             await _redisCache.SetStringAsync(basket.Id.ToString(),strBasket);
 
-            return await GetBasket(basket.Id.ToString());
+            var result  = await GetBasket(basket.Id.ToString());
+            return result;
         }
     }
 }

@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
+using Basket.Domain.Enums;
 using Basket.Domain.Interfaces;
+using Basket.Domain.Models;
+using Checkout.Domain.Exceptions;
 using MediatR;
 
 namespace Basket.Application.Commands.UpdateBasket
@@ -14,9 +17,21 @@ namespace Basket.Application.Commands.UpdateBasket
             _mapper = mapper;
         }
 
-        Task<UpdateBasketResponse> IRequestHandler<UpdateBasketCommand, UpdateBasketResponse>.Handle(UpdateBasketCommand request, CancellationToken cancellationToken)
+        public async Task<UpdateBasketResponse> Handle(UpdateBasketCommand request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var basketResult = await _basketRepository.GetBasket(request.Guid.ToString());
+            if (basketResult == null)
+                throw new EntityNotFoundException(nameof(ShoppingCart));
+
+            basketResult.Items.Add(new ShoppingCartItem
+            {
+                Name = request.Item,
+                Price = request.Price
+            });
+            var basket = await _basketRepository.UpdateBasket(basketResult);
+            var result = _mapper.Map<UpdateBasketResponse>(basket);
+            result.Message = MessageType.Success;
+            return result;
         }
     }
 }
