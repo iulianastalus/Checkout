@@ -5,4 +5,4 @@ services:
     image: ${DOCKER_REGISTRY-}basketapi
     build:
       context: .
-      dockerfile: Checkout/Dockerfile
+      dockerfile: Checkout/Basket/Dockerfile
