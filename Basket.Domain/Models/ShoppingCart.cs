@@ -30,7 +30,7 @@ public class ShoppingCart
             return total;
         } 
     }
-    public decimal TotalGros
+    public decimal TotalGross
     {
         get
         {

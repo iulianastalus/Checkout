@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Basket.Application.Commands.UpdateBasket;
+using Basket.Application.Queries.GetBasket;
 using Basket.Domain.Models;
 using Checkout.Application.Commands.CreateBasket;
 
@@ -22,6 +23,8 @@ namespace Checkout.Application.MappersConfig
                 .ForMember(dest => dest.Customer, opt => opt.MapFrom(src => src.Customer))
                 .ForMember(dest => dest.PaysVAT, opt => opt.MapFrom(src => src.PaysVAT))
                 .ForMember(dest => dest.BasketId, opt => opt.MapFrom(src => src.Id));
+
+            CreateMap<ShoppingCart, GetBasketResponse>().ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id));
         }
     }
 }

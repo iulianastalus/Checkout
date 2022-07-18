@@ -1,4 +1,5 @@
 using Basket.Application.Commands.UpdateBasket;
+using Basket.Application.Queries.GetBasket;
 using Checkout.Application.Commands.CreateBasket;
 using Checkout.Application.Common.Responses;
 using MediatR;
@@ -37,6 +38,17 @@ namespace Checkout.Controllers
         {
             updateBasketCommand.Guid = id;
             var result = await _mediator.Send(updateBasketCommand, cancellationToken);
+            return Ok(result);
+        }
+
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UpdateBasketResponse))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(BaseResponse))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BaseResponse))]
+        [HttpGet("Baskets/{id}")]
+        public async Task<IActionResult> GetBasket([FromRoute] Guid id, CancellationToken cancellationToken = default)
+        {
+            var query = new GetBasketQuery { Id = id };
+            var result = await _mediator.Send(query, cancellationToken);
             return Ok(result);
         }
     }
